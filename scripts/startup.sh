@@ -55,7 +55,7 @@ run_command_with_spinner() {
 install_istio() {
     log "🌐 Installing Istio..."
     run_command_with_spinner sh -c 'curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.23.2 TARGET_ARCH=x86_64 sh -' || log_error "Failed to download Istio"
-    cd istio-1.22.1
+    cd istio-1.23.2
     export PATH=$PWD/bin:$PATH
     echo 'export PATH=$PATH:'"$PWD/bin" >> ~/.bashrc
     run_command_with_spinner istioctl install --set profile=demo -y || log_error "Failed to install Istio"
