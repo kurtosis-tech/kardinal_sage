@@ -14,9 +14,10 @@ To delete all created resources, run: `terraform destroy`
 - By default, this repository deploys a cluster into `us-east-2`. In almost all cases, this is acceptable, but it can be changed via the `variables.tf` file in the root of the repository.
 
 ## Provision an EKS Cluster
-Set up your AWS Credentials: 
+Set up your credentials: 
 
 - `aws configure` and follow the prompts.
+- `export GITHUB_USER=<your GitHub username>`
 
 Create infrastructure resources:
 
@@ -32,3 +33,5 @@ Verify connection to EKS cluster:
 - `kubectl cluster-info` should print out endpoints for the Kubernetes control plane and CoreDNS
 - `kubectl get nodes` should return three worker nodes in the cluster
 
+## Run Playground Setup
+- `./scripts/startup.sh`
