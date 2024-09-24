@@ -1,0 +1,19 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/terraform:1": {},
+		"ghcr.io/devcontainers-contrib/features/terraform-ls-asdf:2": {},
+		"ghcr.io/nucleuscloud/devcontainer-features/helmfile:0": {},
+		"ghcr.io/devcontainers/features/aws-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"4ops.terraform"
+			]
+		}
+	},
+	"postCreateCommand": "",
+	"postAttachCommand": "asdf plugin-add helm https://github.com/Antiarchitect/asdf-helm.git && asdf install"
+}
