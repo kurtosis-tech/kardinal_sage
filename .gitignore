@@ -37,5 +37,9 @@ override.tf.json
 terraform.rc
 .terraform.lock.hcl
 
-# Ignore istio installation directory
-istio-*
+# Ignore Playground installation files
+.DS_Store
+*.log
+node_modules/
+istio-*/
+.idea
