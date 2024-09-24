@@ -94,7 +94,6 @@ module "eks" {
     }
   }
 
-
   node_security_group_additional_rules = {
     ingress_15017 = {
       description                   = "Cluster API - Istio Webhook namespace.sidecar-injector.istio.io"
@@ -113,7 +112,6 @@ module "eks" {
       source_cluster_security_group = true
     }
   }
-
 }
 
 
