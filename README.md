@@ -1,5 +1,12 @@
-# Kardinal Playground (AWS Demo)
-AWS EKS clusters cost $0.10 per hour, so you may incur charges by running this tutorial. The cost should be a few dollars at most, but be sure to delete your infrastructure promptly to avoid additional charges. We are not responsible for any charges you may incur.
+# Kardinal AWS Demo
+## What is Kardinal?
+Kardinal is an open-source framework for creating extremely lightweight ephemeral development environments within a shared Kubernetes cluster. Between dev environments, Kardinal shares every microservice or database that can be feasibly be shared, optimizing for cloud costs and fast spin-up/tear-down. 
+
+Check out the [primary Kardinal repo](https://github.com/kurtosis-tech/kardinal) to learn more.
+
+## Kardinal & AWS
+
+This playground showchases how to use Kardinal and AWS together. Please note that AWS EKS clusters cost $0.10 per hour, so you may incur charges by running this tutorial. The cost should be a few dollars at most, but be sure to delete your infrastructure promptly to avoid additional charges. We are not responsible for any charges you may incur.
 
 To delete all created resources, run: `terraform destroy`
 
